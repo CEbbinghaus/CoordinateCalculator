@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #344252;
+                align-content:space-between;
+            }
+            *{margin: 0px; padding: 0px}
+            canvas{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                height: 50%;
+                background-color: #516377;
+            }
+            ::placeholder{
+                color: #a3a3a3;
+            }
+            input{
+                padding: 5px;
+                color: white;
+                background-color: #a3a3a377;
+                margin: 50 0 0 0;
+                width: 500px;
+                height: 50;
+                font-size: 25px;
+                font-weight: 600;
+                border: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            input[pattern]:invalid{
+                color:red;
+            }
+
+            input:active{
+                border: none;
+            }
+        </style>
+        <script src="./orientation.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <!-- <center> -->
+            <input type="text" placeholder="Coordinates Here" pattern="([NESWnesw])+" required>
+            <br>
+            <canvas></canvas>
+        <!-- </center> -->
+    </body>
+</html>
